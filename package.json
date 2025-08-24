@@ -1,0 +1,41 @@
+{
+  "name": "generative-studio-angular",
+  "version": "1.0.0",
+  "description": "The Generative Studio - AI-Powered Content Creation Platform",
+  "author": "Prasad Sekar <prasad.sekar.official@outlook.com>",
+  "license": "MIT",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "build:prod": "ng build --configuration production",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test",
+    "lint": "ng lint",
+    "serve:ssr": "node dist/generative-studio-angular/server/main.js",
+    "build:ssr": "ng build && ng run generative-studio-angular:server",
+    "deploy:vercel": "ng build --configuration production && vercel deploy dist/generative-studio-angular",
+    "deploy:netlify": "ng build --configuration production && netlify deploy --prod --dir=dist/generative-studio-angular"
+  },
+  "dependencies": {
+    "@angular/animations": "^18.2.13",
+    "@angular/common": "^18.2.13",
+    "@angular/compiler": "^18.2.13",
+    "@angular/core": "^18.2.13",
+    "@angular/forms": "^18.2.13",
+    "@angular/platform-browser": "^18.2.13",
+    "@angular/platform-browser-dynamic": "^18.2.13",
+    "@angular/router": "^18.2.13",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.14.3"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^18.2.20",
+    "@angular/cli": "^18.2.20",
+    "@angular/compiler-cli": "^18.2.13",
+    "@types/jasmine": "~5.1.0",
+    "@types/node": "^18.18.0",
+    "typescript": "~5.4.0"
+  }
+}
